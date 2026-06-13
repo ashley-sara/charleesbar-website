@@ -566,7 +566,8 @@ body {
 /* Host an Event Section */
 .host {
     padding: 3.5rem 1.25rem;
-    background-color: var(--card-bg);
+    background-color: var(--dark-bg);
+    border-top: 2px solid rgba(0, 255, 65, 0.2);
     text-align: center;
 }
 
@@ -614,6 +615,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    align-items: start;
 }
 
 .contact-card {
@@ -669,7 +671,11 @@ body {
     max-width: 280px;
     margin: 0 auto;
     border-collapse: collapse;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+}
+
+.hours-table td:last-child {
+    white-space: nowrap;
 }
 
 .hours-table td {
