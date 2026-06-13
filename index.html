@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlee's Bar - Irish Pub in Elko, Nevada</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo-text">🍀 Charlee's Bar</div>
+            <div class="logo-wrapper">
+                <img src="logo.png" alt="Charlee's Bar Logo" class="logo-img">
+                <span class="logo-text">Charlee's Bar</span>
+            </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -23,31 +27,36 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="clover-logo">🍀</div>
+            <img src="logo.png" alt="Charlee's Bar Logo" class="hero-logo">
             <h1>Charlee's Bar</h1>
             <p class="tagline">Authentic Irish Pub Experience</p>
-            <p class="subtitle">Live Bands • Karaoke • Great Drinks</p>
+            <p class="subtitle">Live Bands • Karaoke • Premium Whiskeys</p>
+            <a href="#contact" class="cta-button">Find Us</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>Welcome to Charlee's Bar</h2>
-            <p>Step into an authentic Irish pub experience right here in Elko, Nevada. Enjoy live music, test your karaoke skills, and experience the warmth of Irish hospitality with a selection of premium whiskeys including Jameson and more.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Welcome to Charlee's Bar</h2>
+                    <p>Step into an authentic Irish pub experience right here in Elko, Nevada. Enjoy live music, test your karaoke skills, and experience the warmth of Irish hospitality with a selection of premium whiskeys including Jameson and more.</p>
+                </div>
+            </div>
             <div class="features">
                 <div class="feature-card">
-                    <span class="feature-icon">🎸</span>
+                    <div class="feature-icon">🎸</div>
                     <h3>Live Bands</h3>
-                    <p>Enjoy authentic Irish and contemporary live music</p>
+                    <p>Authentic Irish and contemporary live music</p>
                 </div>
                 <div class="feature-card">
-                    <span class="feature-icon">🎤</span>
+                    <div class="feature-icon">🎤</div>
                     <h3>Karaoke</h3>
                     <p>Sing your heart out with our full karaoke setup</p>
                 </div>
                 <div class="feature-card">
-                    <span class="feature-icon">🥃</span>
+                    <div class="feature-icon">🥃</div>
                     <h3>Premium Spirits</h3>
                     <p>Jameson whisky and authentic Irish beverages</p>
                 </div>
@@ -70,17 +79,20 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Visit Us</h2>
-            <div class="contact-info">
-                <div class="info-card">
-                    <h3>📍 Location</h3>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
                     <p>542 River St<br>Elko, Nevada 89801</p>
                 </div>
-                <div class="info-card">
-                    <h3>📧 Email</h3>
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
                     <p><a href="mailto:charleesbar@gmail.com">charleesbar@gmail.com</a></p>
                 </div>
-                <div class="info-card">
-                    <h3>📱 Get In Touch</h3>
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>Get In Touch</h3>
                     <p>Reach out for event bookings and inquiries</p>
                 </div>
             </div>
