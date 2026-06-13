@@ -485,7 +485,8 @@ body {
 /* Reviews Section */
 .reviews {
     padding: 3.5rem 1.25rem;
-    background-color: var(--dark-bg);
+    background-color: var(--card-bg);
+    border-top: 2px solid rgba(0, 255, 65, 0.2);
 }
 
 .reviews h2 {
@@ -569,6 +570,15 @@ body {
     background-color: var(--dark-bg);
     border-top: 2px solid rgba(0, 255, 65, 0.2);
     text-align: center;
+}
+
+.host-well {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #202020 100%);
+    border: 2px solid var(--neon-green);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .host h2 {
@@ -665,37 +675,29 @@ body {
     text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
 }
 
-/* Hours table */
-.hours-table {
-    width: 100%;
+/* Hours list */
+.hours-list {
+    list-style: none;
     max-width: 280px;
     margin: 0 auto;
-    border-collapse: collapse;
     font-size: 0.8rem;
 }
 
-.hours-table td:last-child {
-    white-space: nowrap;
-}
-
-.hours-table td {
-    padding: 0.4rem 0.5rem;
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.25rem 0;
     color: var(--text-muted);
-    border-bottom: 1px solid rgba(0, 255, 65, 0.15);
 }
 
-.hours-table td:first-child {
-    text-align: left;
-    font-weight: 600;
+.hours-list li strong {
     color: var(--text-light);
+    font-weight: 600;
 }
 
-.hours-table td:last-child {
-    text-align: right;
-}
-
-.hours-table tr:last-child td {
-    border-bottom: none;
+.hours-list li span {
+    white-space: nowrap;
 }
 
 /* Directions CTA + Map */
