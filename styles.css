@@ -549,7 +549,7 @@ body {
     font-size: 1rem;
     color: var(--text-muted);
     line-height: 1.8;
-    text-align: left;
+    text-align: center;
 }
 
 /* Reviews Section */
@@ -1004,6 +1004,10 @@ footer p:last-child {
 
     .whiskey-text {
         flex: 1;
+    }
+
+    .whiskey-text p {
+        text-align: left;
     }
 
     .whiskey h2 {
