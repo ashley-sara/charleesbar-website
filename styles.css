@@ -327,8 +327,8 @@ body {
     width: 80%;
     max-height: 160px;
     border-radius: 12px;
-    border: 2px solid var(--neon-green);
-    box-shadow: 0 0 20px var(--glow-color);
+    border: 1px solid rgba(0, 255, 65, 0.4);
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.15);
     display: block;
     object-fit: cover;
     object-position: center top;
@@ -530,8 +530,8 @@ body {
     width: 80%;
     max-height: 160px;
     border-radius: 12px;
-    border: 2px solid var(--neon-green);
-    box-shadow: 0 0 20px var(--glow-color);
+    border: 1px solid rgba(0, 255, 65, 0.4);
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.15);
     display: block;
     object-fit: cover;
     object-position: center;
