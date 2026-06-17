@@ -65,15 +65,18 @@
     }
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo-wrapper">
-                <img src="logo.png" alt="Charlee's Bar shamrock neon sign logo" class="logo-img">
+                <img src="logo.png" alt="Charlee's Bar shamrock neon sign logo" class="logo-img" width="50" height="50">
                 <span class="logo-text">Charlee's Bar</span>
             </div>
             <ul class="nav-menu">
@@ -94,9 +97,10 @@
     </div>
 
     <!-- Hero Section -->
+    <main>
     <section id="home" class="hero">
         <div class="hero-content">
-            <img src="logo.png" alt="Charlee's Bar shamrock neon sign logo" class="hero-logo">
+            <img src="logo.png" alt="Charlee's Bar shamrock neon sign logo" class="hero-logo" width="220" height="220">
             <h1>Karaoke Every Night.</h1>
             <p class="hero-tagline">Irish Hospitality Every Day.</p>
             <p class="hero-catchphrase">Let the shenanigans begin!</p>
@@ -119,7 +123,10 @@
         <div class="container">
             <div class="about-layout">
                 <div class="about-image">
-                    <img src="bar.jpeg" alt="Inside Charlee's Bar in Elko, Nevada — bar area with neon signs, string lights, and whiskey shelves" loading="lazy">
+                    <picture>
+                        <source srcset="bar.webp" type="image/webp">
+                        <img src="bar.jpg" alt="Inside Charlee's Bar in Elko, Nevada — bar area with neon signs, string lights, and whiskey shelves" loading="lazy" width="523" height="698">
+                    </picture>
                 </div>
                 <div class="about-text">
                     <h2>Elko's Only Authentic Irish Pub</h2>
@@ -157,7 +164,10 @@
         <div class="container">
             <div class="whiskey-layout">
                 <div class="whiskey-image">
-                    <img src="whiskey-wall.jpeg" alt="Charlee's Bar whiskey wall featuring 180+ bottles of rare Irish and premium whiskeys in Elko, Nevada" loading="lazy">
+                    <picture>
+                        <source srcset="whiskey-wall.webp" type="image/webp">
+                        <img src="whiskey-wall.jpg" alt="Charlee's Bar whiskey wall featuring 180+ bottles of rare Irish and premium whiskeys in Elko, Nevada" loading="lazy" width="523" height="392">
+                    </picture>
                 </div>
                 <div class="whiskey-text">
                     <h2>Raise a Glass</h2>
@@ -225,7 +235,7 @@
                 <div class="contact-card">
                     <div class="contact-icon">📍</div>
                     <h3>Location</h3>
-                    <address>542 River St<br>Elko, NV 89801</address>
+                    <address>542 River St, Elko, NV 89801</address>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">📞</div>
@@ -252,6 +262,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer>

@@ -808,11 +808,11 @@ footer p:last-child {
 .footer-credit {
     margin-top: 0.75rem;
     font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .footer-credit a {
-    color: rgba(0, 255, 65, 0.5);
+    color: rgba(0, 255, 65, 0.75);
     text-decoration: none;
     transition: color 0.3s ease;
 }
