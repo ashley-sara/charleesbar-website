@@ -430,6 +430,48 @@ body {
     font-size: 0.95rem;
 }
 
+/* Featured In Banner */
+.featured-banner {
+    background: linear-gradient(135deg, #1a1200 0%, #2a1f00 100%);
+    border-top: 2px solid rgba(255, 180, 0, 0.4);
+    border-bottom: 2px solid rgba(255, 180, 0, 0.4);
+    padding: 2rem 1.25rem;
+    text-align: center;
+}
+
+.featured-content {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.featured-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffb400;
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px rgba(255, 180, 0, 0.4);
+}
+
+.featured-text {
+    font-size: 0.95rem;
+    color: #d4b87a;
+    line-height: 1.8;
+}
+
+.featured-text strong {
+    color: #ffb400;
+}
+
+.featured-banner .cta-button {
+    align-self: center;
+    display: inline-block;
+}
+
 /* Events Section */
 .events {
     padding: 3.5rem 1.25rem;
@@ -676,6 +718,12 @@ body {
     flex-direction: column;
     gap: 0.75rem;
     align-items: center;
+    text-align: center;
+}
+
+.host-ctas .cta-button {
+    align-self: center;
+    display: inline-block;
 }
 
 /* Contact Section */
