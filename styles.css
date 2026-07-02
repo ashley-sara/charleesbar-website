@@ -482,58 +482,95 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 1.9rem;
     color: var(--neon-green);
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     text-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
     letter-spacing: 1px;
 }
 
-.events-intro {
-    text-align: center;
-    color: var(--text-muted);
+/* Always On Strip */
+.always-on {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+    background: rgba(0, 255, 65, 0.04);
+    border: 1px solid rgba(0, 255, 65, 0.15);
+    border-radius: 10px;
     margin-bottom: 2rem;
-    font-size: 1rem;
-}
-
-.events-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-.event-card {
-    background: linear-gradient(135deg, var(--dark-bg) 0%, #1a2a1a 100%);
-    border: 2px solid var(--neon-green);
-    border-radius: 12px;
-    padding: 1.75rem;
     text-align: center;
-    transition: all 0.3s ease;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.7s ease-out forwards;
-    animation-delay: 0.15s;
 }
 
-.event-card:nth-child(2) { animation-delay: 0.3s; }
-.event-card:nth-child(3) { animation-delay: 0.45s; }
-
-.event-card h3 {
-    font-family: 'Playfair Display', serif;
-    color: var(--neon-green);
-    margin-bottom: 0.6rem;
-    font-size: 1.25rem;
-    letter-spacing: 0.5px;
-}
-
-.event-card p {
+.always-on span {
+    font-size: 0.85rem;
     color: var(--text-muted);
-    font-size: 0.95rem;
     line-height: 1.6;
 }
 
-.event-card:hover {
-    box-shadow: 0 0 30px var(--glow-color);
-    background: linear-gradient(135deg, #1a1a1a 0%, #1a3a1a 100%);
+.always-on .dot {
+    color: rgba(0, 255, 65, 0.3);
+    font-size: 0.7rem;
+}
+
+/* This Month */
+.this-month {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.month-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--neon-green);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.month-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.month-item {
+    display: flex;
+    align-items: baseline;
+    gap: 1.25rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.month-item:last-child {
+    border-bottom: none;
+}
+
+.month-item.highlight-item {
+    background: rgba(0, 255, 65, 0.05);
+    border-radius: 8px;
+    padding: 0.85rem 0.75rem;
+    border-bottom: none;
+    margin: 0.25rem 0;
+}
+
+.month-date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--neon-green);
+    letter-spacing: 1px;
+    flex-shrink: 0;
+    min-width: 48px;
+}
+
+.month-event {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.5;
 }
 
 /* Irish Pub Experience (Whiskey) Section */
@@ -1019,7 +1056,6 @@ footer p:last-child {
    ============================ */
 @media (min-width: 600px) {
     .features,
-    .events-grid,
     .reviews-grid,
     .contact-grid {
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1201,7 +1237,6 @@ footer p:last-child {
     }
 
     .features,
-    .events-grid,
     .reviews-grid,
     .contact-grid {
         gap: 2rem;
