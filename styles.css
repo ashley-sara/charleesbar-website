@@ -821,19 +821,6 @@ body {
     filter: drop-shadow(0 0 8px rgba(0, 255, 65, 0.7));
 }
 
-.contact-social {
-    margin-top: 1.5rem;
-    justify-content: center;
-}
-
-.contact-social .social-link {
-    flex-direction: row;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    min-width: unset;
-    font-size: 0;
-}
-
 .footer-social {
     display: flex;
     justify-content: center;
