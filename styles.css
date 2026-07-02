@@ -319,6 +319,12 @@ body {
     justify-content: center;
 }
 
+.about-image picture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .about-text {
     order: 2;
 }
@@ -663,6 +669,12 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
+}
+
+.whiskey-image picture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .whiskey-image img {
