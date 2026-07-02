@@ -472,6 +472,66 @@ body {
     display: inline-block;
 }
 
+/* Tasty Truck Section */
+.tasty-truck {
+    padding: 3.5rem 1.25rem;
+    background-color: var(--dark-bg);
+    border-top: 2px solid rgba(0, 255, 65, 0.2);
+}
+
+.tasty-truck-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.tasty-truck-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tasty-truck-image img {
+    width: 90%;
+    max-width: 420px;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.tasty-truck-text {
+    text-align: center;
+}
+
+.tasty-truck-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--neon-green);
+    margin-bottom: 0.5rem;
+}
+
+.tasty-truck h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.tasty-truck p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Events Section */
 .events {
     padding: 3.5rem 1.25rem;
@@ -1246,5 +1306,34 @@ footer p:last-child {
     .event-card h3,
     .contact-card h3 {
         font-size: 1.5rem;
+    }
+
+    .tasty-truck-layout {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .tasty-truck-image {
+        flex: 1;
+    }
+
+    .tasty-truck-image img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .tasty-truck-text {
+        flex: 1;
+        text-align: left;
+    }
+
+    .tasty-truck p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .tasty-truck h2 {
+        font-size: 2.5rem;
     }
 }
