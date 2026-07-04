@@ -580,6 +580,19 @@ body {
     font-size: 0.7rem;
 }
 
+.event-link {
+    color: var(--neon-green);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.3);
+    transition: border-color 0.2s ease, color 0.2s ease;
+    font-size: inherit;
+}
+
+.event-link:hover {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
 /* This Month */
 .this-month {
     max-width: 600px;
