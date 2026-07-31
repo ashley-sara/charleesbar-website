@@ -564,50 +564,81 @@ body {
 
 /* Karaoke Hero Callout */
 .karaoke-hero {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-    background: linear-gradient(135deg, rgba(0, 255, 65, 0.08) 0%, rgba(0, 255, 65, 0.03) 100%);
-    border: 1px solid rgba(0, 255, 65, 0.35);
-    border-radius: 14px;
-    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(0, 255, 65, 0.07) 0%, rgba(0, 255, 65, 0.02) 100%);
+    border: 1px solid rgba(0, 255, 65, 0.4);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
     margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.karaoke-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.8), transparent);
+}
+
+.karaoke-hero-top {
+    margin-bottom: 0.75rem;
+}
+
+.karaoke-og-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--neon-green);
+    background: rgba(0, 255, 65, 0.08);
+    border: 1px solid rgba(0, 255, 65, 0.3);
+    border-radius: 20px;
+    padding: 0.25rem 0.85rem;
 }
 
 .karaoke-glow {
-    font-size: 2.5rem;
+    font-size: 3rem;
     animation: karaoke-pulse 2.5s ease-in-out infinite;
-    flex-shrink: 0;
+    display: block;
+    margin-bottom: 0.75rem;
 }
 
 @keyframes karaoke-pulse {
     0%, 100% { filter: drop-shadow(0 0 4px rgba(0, 255, 65, 0.4)); }
-    50% { filter: drop-shadow(0 0 16px rgba(0, 255, 65, 0.9)); }
+    50% { filter: drop-shadow(0 0 20px rgba(0, 255, 65, 1)); }
 }
 
 .karaoke-label {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: var(--neon-green);
-    margin-bottom: 0.2rem;
+    color: rgba(0, 255, 65, 0.7);
+    margin-bottom: 0.3rem;
 }
 
 .karaoke-title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     font-weight: 900;
     color: var(--neon-green);
-    text-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
+    text-shadow: 0 0 30px rgba(0, 255, 65, 0.5);
     line-height: 1.1;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: 1px;
 }
 
 .karaoke-sub {
-    font-size: 0.85rem;
+    font-size: 0.88rem;
     color: var(--text-muted);
-    line-height: 1.5;
+    line-height: 1.7;
+    max-width: 520px;
+    margin: 0 auto;
 }
 
 /* Event Spotlight */
