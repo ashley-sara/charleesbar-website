@@ -612,8 +612,8 @@ body {
 
 /* Event Spotlight */
 .event-spotlight {
-    background: linear-gradient(135deg, #1a0f00 0%, #2a1a00 100%);
-    border: 1px solid rgba(255, 140, 0, 0.4);
+    background: linear-gradient(135deg, #001a2a 0%, #002a3a 100%);
+    border: 1px solid rgba(56, 189, 248, 0.4);
     border-radius: 14px;
     padding: 1.5rem;
     margin-bottom: 2rem;
@@ -628,7 +628,7 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent, rgba(255, 140, 0, 0.8), transparent);
+    background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.8), transparent);
 }
 
 .spotlight-badge {
@@ -637,9 +637,9 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #ff8c00;
-    background: rgba(255, 140, 0, 0.1);
-    border: 1px solid rgba(255, 140, 0, 0.3);
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
     border-radius: 20px;
     padding: 0.2rem 0.75rem;
     margin-bottom: 0.75rem;
@@ -650,7 +650,7 @@ body {
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 2px;
-    color: rgba(255, 140, 0, 0.7);
+    color: rgba(56, 189, 248, 0.7);
     margin-bottom: 0.25rem;
     text-transform: uppercase;
 }
