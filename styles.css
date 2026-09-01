@@ -1153,6 +1153,30 @@ body {
     background: linear-gradient(135deg, var(--card-bg) 0%, #202020 100%);
     border: 1px solid rgba(0, 255, 65, 0.25);
     border-radius: 12px;
+}
+
+.stage-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.stage-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.stage-image picture,
+.stage-image img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 200px;
+}
+
+.stage-info {
     text-align: center;
 }
 
@@ -1723,5 +1747,24 @@ footer p:last-child {
 
     .tasty-truck h2 {
         font-size: 2.5rem;
+    }
+
+    .stage-layout {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .stage-image {
+        flex: 1;
+    }
+
+    .stage-image img {
+        max-height: none;
+    }
+
+    .stage-info {
+        flex: 1;
+        text-align: left;
     }
 }
