@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0a">
 
     <!-- Primary SEO -->
     <title>Charlee's Bar | Authentic Irish Pub in Elko, Nevada</title>
-    <meta name="description" content="Visit Charlee's Bar, Elko's only authentic Irish pub. Enjoy karaoke every night, live music, a whiskey wall with 180+ whiskeys, event hosting and catering, and a welcoming atmosphere in Elko, Nevada. Let the shenanigans begin!">
+    <meta name="description" content="Visit Charlee's Bar, Elko's Irish pub for nightly karaoke, daily happy hour, 180+ whiskeys, live events, food, and private bookings.">
     <meta name="keywords" content="Irish Pub Elko NV, Irish Pub Elko Nevada, Karaoke Bar Elko, Live Music Elko, Nightlife Elko Nevada, Whiskey Bar Elko, Bars in Elko NV, Best Bar in Elko, Live Entertainment Elko, Irish Whiskey Elko, Event Catering Elko, Event Venue Elko, Whiskey Wall Elko">
     <meta name="geo.region" content="US-NV">
     <meta name="geo.placename" content="Elko">
@@ -78,14 +79,21 @@
     <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary navigation">
         <div class="nav-container">
-            <div class="logo-wrapper">
+            <a class="logo-wrapper" href="#home" aria-label="Charlee's Bar home">
                 <img src="logo.png" alt="Charlee's Bar shamrock neon sign logo" class="logo-img" width="50" height="50">
                 <span class="logo-text">Charlee's Bar</span>
-            </div>
-            <ul class="nav-menu">
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+                <span class="sr-only">Open navigation</span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <ul class="nav-menu" id="primary-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#events">Events</a></li>
@@ -95,19 +103,19 @@
     </nav>
 
     <!-- Marquee: Live Karaoke Every Night -->
-    <div class="marquee" aria-label="Live karaoke every night">
+    <div class="marquee" aria-label="Charlee's Bar drink specials and upcoming events">
         <div class="marquee-track">
-            <span>🎤 LIVE KARAOKE EVERY NIGHT &nbsp;•&nbsp; 🍺 HAPPY HOUR 4–7PM DAILY &nbsp;•&nbsp; 🏍️ BIKE NIGHT EVERY THURSDAY &nbsp;•&nbsp; 🍀 IRISH PUB VIBES &nbsp;•&nbsp; 🎸 LIVE BANDS &nbsp;•&nbsp; 🥃 180+ WHISKEYS &nbsp;•&nbsp; 🎲 SUNDAY FUNDAY &nbsp;•&nbsp;</span>
-            <span aria-hidden="true">🎤 LIVE KARAOKE EVERY NIGHT &nbsp;•&nbsp; 🍺 HAPPY HOUR 4–7PM DAILY &nbsp;•&nbsp; 🏍️ BIKE NIGHT EVERY THURSDAY &nbsp;•&nbsp; 🍀 IRISH PUB VIBES &nbsp;•&nbsp; 🎸 LIVE BANDS &nbsp;•&nbsp; 🥃 180+ WHISKEYS &nbsp;•&nbsp; 🎲 SUNDAY FUNDAY &nbsp;•&nbsp;</span>
+            <span>🎤 KARAOKE EVERY NIGHT AT 8PM &nbsp;•&nbsp; 🍺 HAPPY HOUR 4–7PM DAILY &nbsp;•&nbsp; 🪣 BUY 5 BEERS, GET THE 6TH FREE &nbsp;•&nbsp; 🟢 $2 JELLO SHOTS &nbsp;•&nbsp; 🎊 SEPT 1: CHARLEE'S TURNS 4 &nbsp;•&nbsp; 🏍️ SEPT 10: FINAL BIKE NIGHT OF SUMMER &nbsp;•&nbsp; 🍷 SEPT 19: WINE WALK + AFTERPARTY &nbsp;•&nbsp; 🍀 SEPT 27: SUNDAY FUNDAY BINGO &nbsp;•&nbsp; 🎨 SEPT 30: BRUSHES &amp; BOOZE &nbsp;•&nbsp; 🥃 180+ WHISKEYS &nbsp;•&nbsp;</span>
+            <span aria-hidden="true">🎤 KARAOKE EVERY NIGHT AT 8PM &nbsp;•&nbsp; 🍺 HAPPY HOUR 4–7PM DAILY &nbsp;•&nbsp; 🪣 BUY 5 BEERS, GET THE 6TH FREE &nbsp;•&nbsp; 🟢 $2 JELLO SHOTS &nbsp;•&nbsp; 🎊 SEPT 1: CHARLEE'S TURNS 4 &nbsp;•&nbsp; 🏍️ SEPT 10: FINAL BIKE NIGHT OF SUMMER &nbsp;•&nbsp; 🍷 SEPT 19: WINE WALK + AFTERPARTY &nbsp;•&nbsp; 🍀 SEPT 27: SUNDAY FUNDAY BINGO &nbsp;•&nbsp; 🎨 SEPT 30: BRUSHES &amp; BOOZE &nbsp;•&nbsp; 🥃 180+ WHISKEYS &nbsp;•&nbsp;</span>
         </div>
     </div>
 
     <!-- Hero Section -->
-    <main>
+    <main id="main-content">
     <section id="home" class="hero">
         <picture class="hero-bg">
             <source srcset="bar.webp" type="image/webp">
-            <img src="bar.jpg" alt="" class="hero-bg-img" aria-hidden="true">
+            <img src="bar.jpg" alt="" class="hero-bg-img" aria-hidden="true" width="474" height="631">
         </picture>
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -123,7 +131,7 @@
             <div class="hero-info">
                 <p class="hero-address">📍 542 River St, Elko, NV 89801</p>
                 <div class="hero-hours">
-                    <p class="hero-hours-label" id="todayHours">🍀 Open Today: 10:00 AM &ndash; 2:00 AM</p>
+                    <p class="hero-hours-label" id="todayHours" aria-live="polite">🍀 Hours today: 10:00 AM &ndash; 2:00 AM</p>
                 </div>
             </div>
         </div>
@@ -154,7 +162,7 @@
         <div class="container">
             <div class="tasty-truck-layout">
                 <div class="tasty-truck-image">
-                    <img src="tasty_truck.png" alt="The Tasty Truck — open Wednesday through Saturday in the Charlee's Bar parking lot" loading="lazy">
+                    <img src="tasty_truck.png" alt="The Tasty Truck — open Wednesday through Saturday in the Charlee's Bar parking lot" loading="lazy" width="256" height="128">
                 </div>
                 <div class="tasty-truck-text">
                     <p class="tasty-truck-label">In Our Parking Lot</p>
@@ -196,7 +204,7 @@
 
             <!-- Specials Strip -->
             <div class="specials-row reveal">
-                <div class="special-pill">🍺 Bucket of Beer — get your 6th free</div>
+                <div class="special-pill">🍺 Bucket of Beer — buy 5 beers, get the 6th free</div>
                 <div class="special-pill">🟢 Jello Shots $2</div>
                 <div class="special-pill">🗳️ Weekly Drink Special — vote on <a href="https://www.facebook.com/share/1EYjN9dzBc/?mibextid=wwXIfr" target="_blank" rel="noopener" class="event-link">Facebook</a> &amp; <a href="https://www.instagram.com/charlees_bar" target="_blank" rel="noopener" class="event-link">Instagram</a> every Wed &mdash; winner runs Thu 8pm–Sat close</div>
             </div>
@@ -253,7 +261,7 @@
                 </div>
 
                 <div class="event-tile event-type-arts reveal">
-                    <span class="event-tile-date">SEP 28</span>
+                    <span class="event-tile-date">SEP 27</span>
                     <div class="event-tile-body">
                         <p class="event-tile-title">🍀 Sunday Funday — Bingo Night</p>
                         <p class="event-tile-detail">Last Sunday of the month is always Bingo &mdash; walk-in welcome</p>
@@ -289,8 +297,8 @@
                         <span>🤠 Fair Week &amp; Horse Races</span>
                     </div>
                     <div class="around-elko-item">
-                        <span class="around-elko-date">SEP (FRI)</span>
-                        <span>🎊 Fair Parade — 11:30 AM downtown</span>
+                        <span class="around-elko-date">SEP 4</span>
+                        <span>🎊 Elko County Fair Parade — 11:00 AM downtown</span>
                     </div>
                     <div class="around-elko-item">
                         <span class="around-elko-date">SEP 19</span>
@@ -386,7 +394,7 @@
                 <div class="host-card host-card-stage">
                     <picture class="stage-card-img">
                         <source srcset="stage.webp" type="image/webp">
-                        <img src="stage.jpg" alt="Charlee's Bar outdoor stage rental — 16x16 foot stage with canopy" loading="lazy">
+                        <img src="stage.jpg" alt="Charlee's Bar outdoor stage rental — 16x16 foot stage with canopy" loading="lazy" width="800" height="600">
                     </picture>
                     <div class="host-card-icon">🎸</div>
                     <h3>Outdoor Stage Rental</h3>
@@ -480,7 +488,7 @@
     </footer>
 
     <!-- Sticky Mobile CTA -->
-    <div class="sticky-mobile-cta">
+    <div class="sticky-mobile-cta" aria-label="Quick contact options">
         <a href="tel:+17759348996" class="sticky-cta-btn sticky-call">📞 Call Now</a>
         <a href="https://maps.google.com/?q=542+River+St,+Elko,+NV+89801" target="_blank" rel="noopener" class="sticky-cta-btn sticky-directions">📍 Directions</a>
     </div>
