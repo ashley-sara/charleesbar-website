@@ -813,6 +813,98 @@ body {
     line-height: 1.5;
 }
 
+/* Karaoke Spotlight Note */
+.karaoke-spotlight-note {
+    font-size: 0.78rem;
+    color: rgba(0, 255, 65, 0.6);
+    margin-top: 0.75rem;
+    font-style: italic;
+}
+
+/* Specials Strip */
+.specials-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.special-pill {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    background: rgba(0, 255, 65, 0.05);
+    border: 1px solid rgba(0, 255, 65, 0.15);
+    border-radius: 20px;
+    padding: 0.35rem 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Food Note */
+.food-note {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.food-note strong {
+    color: var(--text-light);
+}
+
+/* Around Elko */
+.around-elko {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.around-elko-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.around-elko-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.around-elko-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.around-elko-date {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 1px;
+    flex-shrink: 0;
+    min-width: 64px;
+}
+
+.around-elko-cta {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
 /* Recurring Row */
 .recurring-row {
     display: flex;
@@ -1049,6 +1141,70 @@ body {
 .host-ctas .cta-button {
     align-self: center;
     display: inline-block;
+}
+
+}
+
+/* Stage Rental */
+.stage-rental {
+    max-width: 700px;
+    margin: 1.5rem auto 0;
+    padding: 1.75rem;
+    background: linear-gradient(135deg, var(--card-bg) 0%, #202020 100%);
+    border: 1px solid rgba(0, 255, 65, 0.25);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stage-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(0, 255, 65, 0.6);
+    margin-bottom: 0.4rem;
+}
+
+.stage-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--text-light);
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+.stage-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.stage-detail-item {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    align-items: baseline;
+}
+
+.stage-detail-label {
+    font-weight: 700;
+    color: var(--neon-green);
+    flex-shrink: 0;
+    min-width: 70px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stage-detail-item span:last-child {
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.stage-cta {
+    align-self: center;
 }
 
 /* Social Follow Strip */
