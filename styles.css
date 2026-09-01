@@ -218,7 +218,7 @@ body {
 .marquee-track {
     display: flex;
     width: max-content;
-    animation: marquee-scroll 32s linear infinite;
+    animation: marquee-scroll 38s linear infinite;
 }
 
 .marquee-track span {
@@ -1261,6 +1261,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    align-items: start;
 }
 
 .host-card {
@@ -1278,25 +1279,12 @@ body {
     overflow: hidden;
 }
 
-.host-card-stage .host-card-icon,
-.host-card-stage h3,
-.host-card-stage .stage-specs,
-.host-card-stage .cta-button {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.host-card-stage .cta-button {
-    margin-bottom: 1.5rem;
-}
-
 .stage-card-img {
     display: block;
     width: 100%;
-    height: 200px;
+    height: 170px;
     overflow: hidden;
     border-radius: 14px 14px 0 0;
-    margin-bottom: 1.25rem;
 }
 
 .stage-card-img img {
@@ -1305,6 +1293,26 @@ body {
     object-fit: cover;
     object-position: center;
     display: block;
+}
+
+.stage-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+}
+
+.stage-eyebrow {
+    color: var(--neon-green) !important;
+    font-size: 0.7rem !important;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1.2 !important;
+    text-transform: uppercase;
+}
+
+.stage-summary {
+    max-width: 46ch;
 }
 
 .host-card-icon {
@@ -1342,20 +1350,24 @@ body {
 }
 
 .stage-specs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
     list-style: none;
     padding: 0;
-    margin: 0.25rem 0 0.75rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    margin: 0.25rem 0 0.5rem;
 }
 
 .stage-specs li {
     display: flex;
-    gap: 0.75rem;
-    font-size: 0.83rem;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 0;
+    padding: 0.75rem;
+    background: rgba(0, 255, 65, 0.04);
+    border: 1px solid rgba(0, 255, 65, 0.16);
+    border-radius: 9px;
     color: var(--text-muted);
-    align-items: baseline;
 }
 
 .stage-specs li span {
@@ -1365,14 +1377,43 @@ body {
     letter-spacing: 1px;
     color: var(--neon-green);
     flex-shrink: 0;
-    min-width: 60px;
+    min-width: 0;
+}
+
+.stage-specs li strong {
+    color: var(--text-light);
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.stage-specs li small {
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    line-height: 1.4;
+}
+
+.stage-card-content > .cta-button {
+    align-self: flex-start;
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 420px) {
+    .stage-specs {
+        grid-template-columns: 1fr;
+    }
+
+    .stage-card-content > .cta-button {
+        align-self: stretch;
+        text-align: center;
+    }
 }
 
 .host-card-ctas {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    margin-top: auto;
+    margin-top: 0.5rem;
     padding-top: 0.5rem;
 }
 
@@ -2016,7 +2057,7 @@ footer p:last-child {
     }
 
     .stage-card-img {
-        height: 240px;
+        height: 190px;
     }
 
     /* Hero desktop min-height */
