@@ -207,7 +207,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 1rem;
     font-weight: 700;
-    color: rgba(0, 255, 65, 0.7);
+    color: rgba(0, 255, 65, 0.85);
     margin-bottom: 1.25rem;
     font-style: italic;
     letter-spacing: 0.5px;
@@ -572,6 +572,9 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .karaoke-hero::before {
@@ -714,8 +717,9 @@ body {
 }
 
 .event-tile:hover {
-    transform: translateX(4px);
+    transform: translateX(3px);
     background: rgba(0, 255, 65, 0.05);
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .event-type-bike { border-left-color: #ff8c00; }
@@ -837,8 +841,9 @@ body {
     border: 1px solid rgba(0, 255, 65, 0.15);
     border-radius: 20px;
     padding: 0.35rem 0.9rem;
-    line-height: 1.5;
+    line-height: 1.6;
     text-align: center;
+    max-width: 100%;
 }
 
 /* Food Note */
@@ -860,7 +865,7 @@ body {
 .around-elko {
     margin-top: 1.5rem;
     padding: 1.25rem;
-    border: 1px dashed rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 10px;
 }
 
@@ -962,6 +967,9 @@ body {
     text-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
     letter-spacing: 1px;
     text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .whiskey-layout {
@@ -1178,6 +1186,9 @@ body {
 
 .stage-info {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .stage-label {
@@ -1349,9 +1360,10 @@ body {
 }
 
 .contact-icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.75rem;
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
     display: block;
+    line-height: 1;
 }
 
 .contact-card h3 {
@@ -1434,7 +1446,8 @@ footer {
     border-top: 2px solid var(--neon-green);
     color: var(--text-muted);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    word-break: break-word;
 }
 
 footer p:last-child {
@@ -1546,9 +1559,22 @@ footer p:last-child {
 @media (min-width: 768px) {
     .hours-list {
         flex-direction: row;
-        gap: 1.5rem;
+        gap: 0;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+    }
+
+    .hours-list li {
+        display: flex;
+        align-items: center;
+    }
+
+    .hours-list li + li::before {
+        content: "·";
+        color: rgba(0, 255, 65, 0.3);
+        margin: 0 0.75rem;
+        font-size: 1.2rem;
     }
 
     .hours-strip h3 {
@@ -1693,6 +1719,9 @@ footer p:last-child {
     .about-text p,
     .events-intro {
         font-size: 1.1rem;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .features,
@@ -1760,7 +1789,11 @@ footer p:last-child {
     }
 
     .stage-image img {
-        max-height: none;
+        max-height: 320px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        border-radius: 10px;
     }
 
     .stage-info {
