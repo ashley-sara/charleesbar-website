@@ -156,22 +156,47 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--dark-bg) 0%, #1a3a1a 100%);
     min-height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2.5rem 1.25rem;
+    padding: 3rem 1.25rem;
     border-bottom: 3px solid var(--neon-green);
     position: relative;
     overflow: hidden;
 }
 
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.72) 0%,
+        rgba(0, 20, 0, 0.82) 50%,
+        rgba(0, 0, 0, 0.88) 100%
+    );
+    z-index: 1;
+}
+
 .hero-content {
     animation: fadeInUp 1s ease-out both;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hero-logo {
@@ -1054,6 +1079,13 @@ body {
     box-shadow: 0 0 30px var(--glow-color);
 }
 
+.review-stars {
+    color: #f59e0b;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
 .review-text {
     color: var(--text-light);
     font-size: 0.95rem;
@@ -1102,149 +1134,209 @@ body {
     margin-bottom: 0;
 }
 
-/* Host an Event Section */
+/* Host & Stage Section */
 .host {
     padding: 3.5rem 1.25rem;
     background-color: var(--dark-bg);
     border-top: 2px solid rgba(0, 255, 65, 0.2);
-    text-align: center;
 }
 
-.host-well {
-    background: linear-gradient(135deg, var(--card-bg) 0%, #202020 100%);
-    border: 2px solid var(--neon-green);
-    border-radius: 12px;
-    padding: 2rem 1.5rem;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.host h2 {
+.host-heading {
     font-family: 'Playfair Display', serif;
     font-size: 1.9rem;
     color: var(--neon-green);
-    margin-bottom: 1.25rem;
+    text-align: center;
     text-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
     letter-spacing: 1px;
-    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
-.host p {
-    font-size: 1rem;
+.host-intro {
+    text-align: center;
     color: var(--text-muted);
-    max-width: 700px;
-    margin: 0 auto 1.25rem auto;
-    line-height: 1.8;
-    text-align: center;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
 }
 
-.host-ctas {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    align-items: center;
-    text-align: center;
-}
-
-.host-ctas .cta-button {
-    align-self: center;
-    display: inline-block;
-}
-
-}
-
-/* Stage Rental */
-.stage-rental {
-    margin: 2rem 0 0;
-    padding: 2rem;
-    background: linear-gradient(135deg, var(--card-bg) 0%, #202020 100%);
-    border: 1px solid rgba(0, 255, 65, 0.2);
-    border-radius: 12px;
-}
-
-.stage-layout {
-    display: flex;
-    flex-direction: column;
+.host-grid {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
-.stage-image {
-    width: 100%;
-    border-radius: 10px;
+.host-card {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #1e1e1e 100%);
+    border: 1px solid rgba(0, 255, 65, 0.25);
+    border-radius: 14px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.host-card-stage {
+    padding: 0;
     overflow: hidden;
 }
 
-.stage-image picture {
-    display: block;
-    width: 100%;
+.host-card-stage .host-card-icon,
+.host-card-stage h3,
+.host-card-stage .stage-specs,
+.host-card-stage .cta-button {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
-.stage-image img {
-    width: 100%;
-    height: 220px;
+.host-card-stage .cta-button {
+    margin-bottom: 1.5rem;
+}
+
+.stage-card-img {
     display: block;
-    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 14px 14px 0 0;
+    margin-bottom: 1.25rem;
+}
+
+.stage-card-img img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
+    display: block;
 }
 
-.stage-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
+.host-card-icon {
+    font-size: 2rem;
+    line-height: 1;
 }
 
-.stage-label {
-    font-size: 0.65rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    color: rgba(0, 255, 65, 0.55);
-    margin-bottom: 0.35rem;
-}
-
-.stage-title {
+.host-card h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     color: var(--text-light);
-    margin-bottom: 1.25rem;
     letter-spacing: 0.5px;
-    line-height: 1.3;
+    margin: 0;
 }
 
-.stage-details {
+.host-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.host-perks {
+    list-style: none;
+    padding: 0;
+    margin: 0.25rem 0;
     display: flex;
     flex-direction: column;
-    gap: 0.65rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
+    gap: 0.35rem;
 }
 
-.stage-detail-item {
+.host-perks li {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.stage-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0.25rem 0 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stage-specs li {
     display: flex;
     gap: 0.75rem;
-    font-size: 0.85rem;
+    font-size: 0.83rem;
+    color: var(--text-muted);
     align-items: baseline;
 }
 
-.stage-detail-label {
+.stage-specs li span {
+    font-size: 0.68rem;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: var(--neon-green);
     flex-shrink: 0;
-    min-width: 72px;
-    font-size: 0.7rem;
+    min-width: 60px;
+}
+
+.host-card-ctas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+/* ============================================================
+   STICKY MOBILE CTA
+   ============================================================ */
+.sticky-mobile-cta {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(10, 10, 10, 0.97);
+    border-top: 1px solid rgba(0, 255, 65, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.sticky-cta-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem 1rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    transition: background 0.2s ease;
 }
 
-.stage-detail-item span:last-child {
-    color: var(--text-muted);
-    line-height: 1.5;
+.sticky-call {
+    background: var(--neon-green);
+    color: #000;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.stage-cta {
-    margin-top: 0.25rem;
+.sticky-call:hover {
+    background: #00cc33;
+}
+
+.sticky-directions {
+    color: var(--neon-green);
+    background: transparent;
+}
+
+.sticky-directions:hover {
+    background: rgba(0, 255, 65, 0.08);
+}
+
+/* Hide sticky bar on desktop — not needed with visible header CTAs */
+@media (min-width: 768px) {
+    .sticky-mobile-cta {
+        display: none;
+    }
+}
+
+/* Add bottom padding on mobile so sticky bar doesn't cover content */
+@media (max-width: 767px) {
+    body {
+        padding-bottom: 56px;
+    }
 }
 
 /* Social Follow Strip */
@@ -1803,5 +1895,29 @@ footer p:last-child {
         flex: 1;
         text-align: left;
         align-items: flex-start;
+    }
+
+    /* Host grid — two columns on desktop */
+    .host-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .host-card-ctas {
+        flex-direction: row;
+    }
+
+    .stage-card-img {
+        height: 240px;
+    }
+
+    /* Hero desktop min-height */
+    .hero {
+        min-height: 90vh;
+        padding: 4rem 2rem;
+    }
+
+    .host-heading {
+        font-size: 2.5rem;
     }
 }

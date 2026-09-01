@@ -105,6 +105,11 @@
     <!-- Hero Section -->
     <main>
     <section id="home" class="hero">
+        <picture class="hero-bg">
+            <source srcset="bar.webp" type="image/webp">
+            <img src="bar.jpg" alt="" class="hero-bg-img" aria-hidden="true">
+        </picture>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <img src="logo.png" alt="Charlee's Bar shamrock neon sign logo" class="hero-logo" width="220" height="220" fetchpriority="high">
             <h1>Karaoke Every Night.</h1>
@@ -322,14 +327,17 @@
             <h2>What Our Guests Are Saying</h2>
             <div class="reviews-grid">
                 <div class="review-card">
+                    <p class="review-stars">★★★★★</p>
                     <p class="review-text">"Always a fun place to dance, drink, and sing songs. Making a fool of yourself is part of the experience — and everyone respects you for having the guts to get up and sing."</p>
                     <p class="review-author">&mdash; Jonathon Smith</p>
                 </div>
                 <div class="review-card">
+                    <p class="review-stars">★★★★★</p>
                     <p class="review-text">"It's always a fun time, and the food truck outside is so good. Love the staff and the great vibe."</p>
                     <p class="review-author">&mdash; Amanda Murphy</p>
                 </div>
                 <div class="review-card">
+                    <p class="review-stars">★★★★★</p>
                     <p class="review-text">"Such a fun hangout &mdash; always something new going on every time we've been in. Elko's very own Cheers!"</p>
                     <p class="review-author">&mdash; John Dudley</p>
                 </div>
@@ -350,56 +358,48 @@
         </div>
     </section>
 
-    <!-- Host an Event Section -->
+    <!-- Host & Stage Section -->
     <section id="host" class="host">
         <div class="container">
+            <h2 class="host-heading">Book Charlee's</h2>
+            <p class="host-intro">Whether you're hosting an event or need a stage — we've got you covered.</p>
+            <div class="host-grid">
 
-            <!-- Event Hosting -->
-            <div class="host-well">
-                <h2>Host &amp; Cater Your Next Event</h2>
-                <p>Planning a birthday, corporate event, or celebration? Charlee's offers event hosting and catering services to make your night truly unforgettable — live karaoke, 180+ whiskeys, and an atmosphere nobody will forget.</p>
-                <p>Give us a call or send an email to chat about hosting or catering your next event — let the shenanigans begin!</p>
-                <div class="host-ctas">
-                    <a href="tel:+17759348996" class="cta-button">Call to Book</a>
-                    <a href="mailto:charleesbar@gmail.com" class="cta-button cta-secondary">Email Us</a>
-                </div>
-            </div>
-
-            <!-- Stage Rental -->
-            <div class="stage-rental">
-                <div class="stage-layout">
-                    <div class="stage-image">
-                        <picture>
-                            <source srcset="stage.webp" type="image/webp">
-                            <img src="stage.jpg" alt="Charlee's Bar outdoor stage rental — 16x16 foot stage with canopy, holds a 5-piece band" loading="lazy" width="400" height="300">
-                        </picture>
-                    </div>
-                    <div class="stage-info">
-                        <p class="stage-label">Also Available</p>
-                        <h3 class="stage-title">🎸 Outdoor Stage Rental</h3>
-                        <div class="stage-details">
-                            <div class="stage-detail-item">
-                                <span class="stage-detail-label">Size</span>
-                                <span>16&prime; &times; 16&prime; fully set up — holds a 5-piece band</span>
-                            </div>
-                            <div class="stage-detail-item">
-                                <span class="stage-detail-label">Rate</span>
-                                <span>$800/day &mdash; optional canopy +$100/day &mdash; mileage additional</span>
-                            </div>
-                            <div class="stage-detail-item">
-                                <span class="stage-detail-label">Deposit</span>
-                                <span>$100 non-refundable to reserve</span>
-                            </div>
-                            <div class="stage-detail-item">
-                                <span class="stage-detail-label">Includes</span>
-                                <span>Setup, operation &amp; teardown by our team</span>
-                            </div>
-                        </div>
-                        <a href="tel:+17759348996" class="cta-button cta-secondary stage-cta">Call to Reserve</a>
+                <!-- Event Hosting Card -->
+                <div class="host-card">
+                    <div class="host-card-icon">🎉</div>
+                    <h3>Host &amp; Cater Your Event</h3>
+                    <p>Birthdays, corporate events, celebrations — Charlee's brings the atmosphere. Live karaoke, 180+ whiskeys, and a night nobody will forget.</p>
+                    <ul class="host-perks">
+                        <li>✓ Event hosting &amp; catering</li>
+                        <li>✓ Live karaoke setup</li>
+                        <li>✓ Full bar service</li>
+                        <li>✓ Dance floor &amp; outdoor patio</li>
+                    </ul>
+                    <div class="host-card-ctas">
+                        <a href="tel:+17759348996" class="cta-button">Call to Book</a>
+                        <a href="mailto:charleesbar@gmail.com" class="cta-button cta-secondary">Email Us</a>
                     </div>
                 </div>
-            </div>
 
+                <!-- Stage Rental Card -->
+                <div class="host-card host-card-stage">
+                    <picture class="stage-card-img">
+                        <source srcset="stage.webp" type="image/webp">
+                        <img src="stage.jpg" alt="Charlee's Bar outdoor stage rental — 16x16 foot stage with canopy" loading="lazy">
+                    </picture>
+                    <div class="host-card-icon">🎸</div>
+                    <h3>Outdoor Stage Rental</h3>
+                    <ul class="stage-specs">
+                        <li><span>Size</span>16&prime; &times; 16&prime; — holds a 5-piece band</li>
+                        <li><span>Rate</span>$800/day &mdash; canopy +$100/day optional</li>
+                        <li><span>Deposit</span>$100 non-refundable</li>
+                        <li><span>Includes</span>Full setup &amp; teardown</li>
+                    </ul>
+                    <a href="tel:+17759348996" class="cta-button cta-secondary">Call to Reserve</a>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -478,6 +478,12 @@
         </div>
         <p class="footer-credit">Website by <a href="https://www.ashley-sara.com" target="_blank" rel="noopener">Ashley Sara Marketing</a></p>
     </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-mobile-cta">
+        <a href="tel:+17759348996" class="sticky-cta-btn sticky-call">📞 Call Now</a>
+        <a href="https://maps.google.com/?q=542+River+St,+Elko,+NV+89801" target="_blank" rel="noopener" class="sticky-cta-btn sticky-directions">📍 Directions</a>
+    </div>
 
     <script src="script.js"></script>
 </body>
