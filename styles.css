@@ -629,12 +629,18 @@ body {
     justify-content: center;
 }
 
+.tasty-truck-image picture {
+    width: 100%;
+    display: block;
+}
+
 .tasty-truck-image img {
-    width: 90%;
-    max-width: 420px;
+    width: 100%;
+    max-width: 520px;
     border-radius: 12px;
     display: block;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    object-fit: cover;
 }
 
 .tasty-truck-text {
